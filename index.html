@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230930020013">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230930151824">
 </head>
 
 <body>
@@ -15,15 +15,15 @@
 	<div class="header__body">
 		<div class="header__container _container">
 			<div class="header__content">
-				<div class="header__logo">
+				<a href="#intro" class="header__logo link-scroll">
 					<img src="img/logo.png" alt="logo">
-				</div>
+				</a>
 				<nav class="header__nav">
 					<div class="header__ul">
-						<div class="header__li"><a href="#about" class="header__link">О нас</a></div>
-						<div class="header__li"><a href="#ourSolutions" class="header__link">Наши решения</a></div>
-						<div class="header__li"><a href="#products" class="header__link">Продукты</a></div>
-						<div class="header__li"><a href="#howItWorks" class="header__link">Как это работает</a></div>
+						<div class="header__li"><a href="#about" class="header__link link-scroll">О нас</a></div>
+						<div class="header__li"><a href="#decisions" class="header__link link-scroll">Наши решения</a></div>
+						<div class="header__li"><a href="#products" class="header__link link-scroll">Продукты</a></div>
+						<div class="header__li"><a href="#problems" class="header__link link-scroll">Как это работает</a></div>
 					</div>
 				</nav>
 				<div class="header__tel" data-da=".header__ul,767.98,last">
@@ -52,7 +52,7 @@
 							<p class="intro__text">Удобное и надежное решение для хранения ваших личных вещей, обеспечивая просторное
 								пространство и гибкую аренду.</p>
 							<div class="intro__content-bottom">
-								<button class="intro__button">
+								<button class="intro__button modal-btn-active">
 									<span>Консультация</span>
 									<svg class="icon">
 										<use xlink:href="img/svg/sprite.svg#arrow"></use>
@@ -64,7 +64,7 @@
 									<div class="familiarize__block">Ознакомиться с<br> демо-версией</div>
 								</div>
 							</div>
-							<a href="" class="intro__anchor-form">
+							<a href="#contact" class="intro__anchor-form link-scroll">
 								<svg class="icon">
 									<use xlink:href="img/svg/sprite.svg#arrow"></use>
 								</svg>
@@ -119,7 +119,7 @@
 					</div>
 				</section>
 
-				<section class="problems section" id="decisions">
+				<section class="problems section" id="problems">
 					<div class="problems__container _container">
 						<div class="problems__body">
 							<h2 class="problems__title h2">Проблемы, которые мы решаем</h2>
@@ -657,15 +657,91 @@
 						</ul>
 					</div>
 				</section>
+
+				<section class="contact section" id="contact">
+					<div class="contact__container _container">
+						<div class="contact__body">
+							<h2 class="contact__title h2">Связаться с нами</h2>
+							<p class="contact__subtitle">Остались вопросы? Оставьте свои контакты, и мы свяжемся с вами</p>
+							<div class="contact__content">
+								<div class="contact__wpImg">
+									<img src="img/contact-1.png" alt="contact">
+								</div>
+								<form class="contact__form" data-form="contact">
+									<h4 class="contact__form_title">Оставьте заявку:</h4>
+									<div class="contact__form_wpInput">
+										<input type="text" class="contact__form_input" placeholder="Ваше имя">
+									</div>
+									<div class="contact__form_wpInput">
+										<input type="tel" class="contact__form_input" placeholder="Ваш телефон" inputmode="tel">
+									</div>
+									<p class="contact__form_info">Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
+										хранение ваших персональных
+										данных в соответствии с <a href="#">политикой обработки персональных данных.</a></p>
+									<button class="contact__form_button">Отправить запрос</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
 		<footer class="footer">
-	<div class="footer__container _container">
-
+	<div class="footer__body">
+		<div class="footer__container _container">
+			<div class="footer__content">
+				<img src="img/header-border.png" alt="header-border" class="footer__imgBorder" style="opacity: 1;">
+				<a href="#intro" class="footer__logo link-scroll">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<li class="footer__li"><a href="#about" class="footer__link link-scroll">О нас</a></li>
+						<li class="footer__li"><a href="#decisions" class="footer__link link-scroll">Наши решения</a></li>
+						<li class="footer__li"><a href="#products" class="footer__link link-scroll">Продукты</a></li>
+						<li class="footer__li"><a href="#problems" class="footer__link link-scroll">Как это работает</a></li>
+					</ul>
+				</nav>
+				<div class="footer__tel">
+					<svg class="icon">
+						<use xlink:href="img/svg/sprite.svg#tel"></use>
+					</svg>
+					<a href="tel:88008999999" class="footer__lTel">8 800 899 99 99</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20230930020013"></script>
+	<div class="modal modal-consultation">
+	<div class="modal__content">
+		<div class="modal__body modal-consultation__body">
+			<div class="modal__close">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="contact__content">
+				<div class="contact__wpImg">
+					<img src="img/consultation-1.png" alt="contact">
+				</div>
+				<form class="contact__form" data-form="consultation">
+					<h4 class="contact__form_title">Получить консультацию</h4>
+					<div class="contact__form_wpInput">
+						<input type="text" class="contact__form_input" placeholder="Ваше имя">
+					</div>
+					<div class="contact__form_wpInput">
+						<input type="tel" class="contact__form_input" placeholder="Ваш телефон" inputmode="tel">
+					</div>
+					<p class="contact__form_info">Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
+						хранение ваших персональных
+						данных в соответствии с <a href="#">политикой обработки персональных данных.</a></p>
+					<button class="contact__form_button">Отправить запрос</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="js/app.min.js?_v=20230930151824"></script>
 </body>
 
 </html>
