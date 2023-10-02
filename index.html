@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230930152725">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231002102812">
 </head>
 
 <body>
@@ -670,15 +670,21 @@
 								<form class="contact__form" data-form="contact">
 									<h4 class="contact__form_title">Оставьте заявку:</h4>
 									<div class="contact__form_wpInput">
-										<input type="text" class="contact__form_input" placeholder="Ваше имя">
+										<input type="text" name="firstname" class="contact__form_input" placeholder="Ваше имя">
 									</div>
 									<div class="contact__form_wpInput">
-										<input type="tel" class="contact__form_input" placeholder="Ваш телефон" inputmode="tel">
+										<input type="tel" name="username" class="contact__form_input" placeholder="Ваш телефон"
+											inputmode="tel">
 									</div>
 									<p class="contact__form_info">Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
 										хранение ваших персональных
 										данных в соответствии с <a href="#">политикой обработки персональных данных.</a></p>
-									<button class="contact__form_button">Отправить запрос</button>
+									<button class="contact__form_button">
+										<span>Отправить запрос</span>
+										<div class="loader">
+											<span class="loader__span"></span>
+										</div>
+									</button>
 								</form>
 							</div>
 						</div>
@@ -727,21 +733,26 @@
 				<form class="contact__form" data-form="consultation">
 					<h4 class="contact__form_title">Получить консультацию</h4>
 					<div class="contact__form_wpInput">
-						<input type="text" class="contact__form_input" placeholder="Ваше имя">
+						<input type="text" name="firstname" class="contact__form_input" placeholder="Ваше имя">
 					</div>
 					<div class="contact__form_wpInput">
-						<input type="tel" class="contact__form_input" placeholder="Ваш телефон" inputmode="tel">
+						<input type="tel" name="username" class="contact__form_input" placeholder="Ваш телефон" inputmode="tel">
 					</div>
 					<p class="contact__form_info">Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
 						хранение ваших персональных
 						данных в соответствии с <a href="#">политикой обработки персональных данных.</a></p>
-					<button class="contact__form_button">Отправить запрос</button>
+					<button class="contact__form_button">
+						<span>Отправить запрос</span>
+						<div class="loader">
+							<span class="loader__span"></span>
+						</div>
+					</button>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
-	<script src="js/app.min.js?_v=20230930152725"></script>
+	<script src="js/app.min.js?_v=20231002102812"></script>
 </body>
 
 </html>
