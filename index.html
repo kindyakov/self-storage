@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Главная</title>
+	<title>Self-Storage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231002102812">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231008132904">
 </head>
 
 <body>
@@ -59,9 +59,7 @@
 									</svg>
 								</button>
 								<div class="familiarize">
-									<div class="familiarize__block">Демо-версия</div>
-									<span class="familiarize__span">ИЛИ</span>
-									<div class="familiarize__block">Ознакомиться с<br> демо-версией</div>
+									<a href="" class="familiarize__block">Демо-версия</a>
 								</div>
 							</div>
 							<a href="#contact" class="intro__anchor-form link-scroll">
@@ -199,9 +197,7 @@
 								</div>
 							</div>
 							<div class="familiarize">
-								<div class="familiarize__block">Демо-версия</div>
-								<span class="familiarize__span">ИЛИ</span>
-								<div class="familiarize__block">Ознакомиться с<br> демо-версией</div>
+								<a href="" class="familiarize__block">Демо-версия</a>
 							</div>
 						</div>
 					</div>
@@ -558,10 +554,15 @@
 											<div class="locks__block-name">SecureGuard<br> Locks</div>
 											<p class="locks__block-text">Надежные замки для контейнеров хранения обеспечивающие безопасность
 												и защиту ваших ценностей.</p>
+											<ul class="decisions__block-pagin">
+												<li class="active">1</li>
+												<span>или </span>
+												<li>2</li>
+											</ul>
 										</div>
 									</div>
-									<div class="locks__block active">
-										<img src="img/locks-bg-2.png" alt="locks-bg" class="locks__block-imgBg">
+									<div class="locks__block">
+										<img src="img/locks-bg.png" alt="locks-bg" class="locks__block-imgBg">
 										<div class="locks__block-img">
 											<img src="img/locks-2.png" alt="locks">
 										</div>
@@ -569,6 +570,11 @@
 											<div class="locks__block-name">FortressLock<br> Systems</div>
 											<p class="locks__block-text">Создают непроницаемую защиту и безопасность для вашего хранилища.
 											</p>
+											<ul class="decisions__block-pagin">
+												<li>1</li>
+												<span>или </span>
+												<li class="active">2</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -579,50 +585,71 @@
 								<h3 class="locks__title h3">Наша система</h3>
 								<div class="system__swiper">
 									<div class="system__content">
-										<div class="system__block">
-											<img src="img/system-1.png" alt="system" class="system__block-img">
-											<h4 class="system__block-title">RFID</h4>
-											<span class="system__block-titleInfo">панель</span>
-											<p class="system__block-text text-1">Обеспечивает эффективную</p>
-											<p class="system__block-text text-2">идентификацию клиентов,</p>
-											<p class="system__block-text text-3">позволяя быстро и удобно получать доступ к контейнерам
-												хранения.
-											</p>
-											<ul class="decisions__block-pagin">
-												<li class="active">1</li>
-												<li>2</li>
-												<li>3</li>
-											</ul>
+										<div class="system__wpBlock">
+											<div class="system__block">
+												<img src="img/system-1.png" alt="system" class="system__block-img">
+												<h4 class="system__block-title">RFID</h4>
+												<span class="system__block-titleInfo">панель</span>
+												<p class="system__block-text text-1">-идентификацию клиентов</p>
+												<p class="system__block-text text-2">-быстрый и удобный доступ к контейнерам хранения.</p>
+												<div class="products__card_priceBlock">
+													<span class="products__card_price">1659₽</span>
+													<span class="products__card_month">в месяц</span>
+													<span class="products__card_price-year">19 900 ₽/год</span>
+												</div>
+												<ul class="decisions__block-pagin system-pagin-1">
+													<div>
+														<li class="active">1</li>
+														<li>2</li>
+														<li>3</li>
+													</div>
+												</ul>
+											</div>
+											<a href="" class="system__block-button" data-da=".system-pagin-1,1000,last">Купить</a>
 										</div>
-										<div class="system__block">
-											<img src="img/system-2.png" alt="system" class="system__block-img">
-											<h4 class="system__block-title">Кодовая</h4>
-											<span class="system__block-titleInfo">панель</span>
-											<p class="system__block-text text-1">Обеспечивает простой</p>
-											<p class="system__block-text text-2">и надежный способ доступа к</p>
-											<p class="system__block-text text-3">контейнерам хранения, гарантируя безопасность клиентских
-												вещей.
-											</p>
-											<ul class="decisions__block-pagin">
-												<li>1</li>
-												<li class="active">2</li>
-												<li>3</li>
-											</ul>
+										<div class="system__wpBlock">
+											<div class="system__block">
+												<img src="img/system-2.png" alt="system" class="system__block-img">
+												<h4 class="system__block-title">Кодовая</h4>
+												<span class="system__block-titleInfo">панель</span>
+												<p class="system__block-text text-1">-идентификацию клиентов</p>
+												<p class="system__block-text text-2">-быстрый и удобный доступ к контейнерам хранения.</p>
+												<div class="products__card_priceBlock">
+													<span class="products__card_price">1659₽</span>
+													<span class="products__card_month">в месяц</span>
+													<span class="products__card_price-year">19 900 ₽/год</span>
+												</div>
+												<ul class="decisions__block-pagin system-pagin-2">
+													<div>
+														<li>1</li>
+														<li class="active">2</li>
+														<li>3</li>
+													</div>
+												</ul>
+											</div>
+											<a href="" class="system__block-button" data-da=".system-pagin-2,1000,last">Купить</a>
 										</div>
-										<div class="system__block">
-											<img src="img/system-3.png" alt="system" class="system__block-img">
-											<h4 class="system__block-title">Доступ</h4>
-											<span class="system__block-titleInfo">по телефону</span>
-											<p class="system__block-text text-1">Клиенты могут легко</p>
-											<p class="system__block-text text-2">контролировать и управлять своими</p>
-											<p class="system__block-text text-3">контейнерами Self-Storage, включая бронирование, открытие и
-												закрытие.
-											</p>
-											<ul class="decisions__block-pagin">
-												<li>1</li>
-												<li>2</li>
-												<li class="active">3</li>
-											</ul>
+										<div class="system__wpBlock">
+											<div class="system__block">
+												<img src="img/system-3.png" alt="system" class="system__block-img">
+												<h4 class="system__block-title">Доступ</h4>
+												<span class="system__block-titleInfo">по телефону</span>
+												<p class="system__block-text text-1">-идентификацию клиентов</p>
+												<p class="system__block-text text-2">-быстрый и удобный доступ к контейнерам хранения.</p>
+												<div class="products__card_priceBlock">
+													<span class="products__card_price">1659₽</span>
+													<span class="products__card_month">в месяц</span>
+													<span class="products__card_price-year">19 900 ₽/год</span>
+												</div>
+												<ul class="decisions__block-pagin system-pagin-3">
+													<div>
+														<li>1</li>
+														<li>2</li>
+														<li class="active">3</li>
+													</div>
+												</ul>
+											</div>
+											<a href="" class="system__block-button" data-da=".system-pagin-3,1000,last">Купить</a>
 										</div>
 									</div>
 								</div>
@@ -752,7 +779,7 @@
 		</div>
 	</div>
 </div>
-	<script src="js/app.min.js?_v=20231002102812"></script>
+	<script src="js/app.min.js?_v=20231008132904"></script>
 </body>
 
 </html>
